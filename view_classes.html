@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Classes</title>
+</head>
+<body>
+    <h1>Classes List</h1>
+    <ul>
+        {% for class in classes %}
+            <li>{{ class[1] }} - {{ class[2] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_class') }}">Add New Class</a>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>
